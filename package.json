@@ -1,0 +1,25 @@
+{
+  "name": "grunt-jsdoc-md",
+  "version": "0.1.0-beta",
+  "description": "Grunt task to generate Markdown documentation based on your JSDoc comments.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.prototype0.net:thomas.parisot/grunt-jsdoc-md.git"
+  },
+  "keywords": [
+    "gruntplugin",
+    "jsdoc",
+    "markdown"
+  ],
+  "author": "Thomas Parisot <thomas.parisot@bbc.co.uk>",
+  "license": "Apache-2",
+  "dependencies": {
+    "swig": "~1.0.0-rc3",
+    "dox": "git+https://github.com/oncletom/dox.git#inline-prototype",
+    "grunt": "~0.4.1"
+  }
+}

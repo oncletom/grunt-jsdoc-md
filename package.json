@@ -1,6 +1,6 @@
 {
   "name": "grunt-jsdoc-md",
-  "version": "0.1.0-beta",
+  "version": "0.1.0",
   "description": "Grunt task to generate Markdown documentation based on your JSDoc comments.",
   "main": "Gruntfile.js",
   "scripts": {

@@ -4,6 +4,8 @@ var dox = require("dox");
 var swig  = require("swig");
 var filters = require("../lib/filters.js");
 var modifiers = require("../lib/modifiers.js");
+var each = require('each-async');
+
 var defaultOptions = {
   /**
    * Filters out unwanted comments from the documentation output.
@@ -36,15 +38,13 @@ var defaultOptions = {
 };
 
 module.exports = function(grunt){
-  var async = grunt.util.async;
-
   grunt.registerMultiTask("jsdoc_md", function(){
     var done = this.async();
 
     // This is the options you are looking for.
     var options = this.options(defaultOptions);
 
-    async.forEach(this.files, function(fileConfig, next){
+    each(this.files, function(fileConfig, i, next){
       var parsedComments = dox.parseComments(grunt.file.read(fileConfig.src[0]), options.marked);
 
       if (options.filters.length){

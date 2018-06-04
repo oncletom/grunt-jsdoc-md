@@ -20,7 +20,7 @@
   "dependencies": {
     "dox": "~0.5.1",
     "each-async": "~1.0.0",
-    "grunt": "~0.4.1",
+    "grunt": "~1.0.3",
     "swig": "~1.4.2"
   }
 }

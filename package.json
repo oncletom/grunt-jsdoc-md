@@ -4,7 +4,9 @@
   "description": "Grunt task to generate Markdown documentation based on your JSDoc comments.",
   "main": "Gruntfile.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,8 @@
     "dox": "~0.5.1",
     "each-async": "~1.0.0",
     "grunt": "~1.0.3",
-    "swig": "~1.4.2"
-  }
+    "swig": "~1.4.2",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
